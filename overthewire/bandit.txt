@@ -43,4 +43,7 @@ Level 12: 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 	mv data8.bin data8.gz
 	gunzip data8.gz
 Level 13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
-
+	ssh bandit14@localhost -i sshkey.private
+Level 14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+	echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000
+Level15: BfMYroe26WYalil77FoDi9qh59eK5xNr
