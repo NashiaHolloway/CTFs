@@ -46,4 +46,10 @@ Level 13: 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 	ssh bandit14@localhost -i sshkey.private
 Level 14: 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 	echo "4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e" | nc localhost 30000
-Level15: BfMYroe26WYalil77FoDi9qh59eK5xNr
+Level 15: BfMYroe26WYalil77FoDi9qh59eK5xNr
+	echo "BfMYroe26WYalil77FoDi9qh59eK5xNr" | openssl s_client -ign_eof -connect localhost:30001
+Level 16: cluFn7wTiGryunymYOu4RcffSxQluehd
+	nmap localhost -sV -p 31000-32000
+	echo "cluFn7wTiGryunymYOu4RcffSxQluehd" | openssl s_client -connect localhost:31790 -quiet
+	chmod 400 sshkey.private 
+	
