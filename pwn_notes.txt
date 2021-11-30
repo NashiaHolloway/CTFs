@@ -1,0 +1,34 @@
+pwn notes
+
+RECON
+	WEB
+		Identify tech on websites: https://www.wappalyzer.com/
+		Wayback Machine: https://archive.org/web/
+		SSL/TLS Certificates: https://crt.sh
+		Fuzz Fater U Fool (ffuf): https://github.com/ffuf/ffuf
+			ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://$ip/FUZZ 
+		Gobuster
+			gobuster dir -u $ip -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt 
+	
+	HOST
+		First
+			nmap -sC -sV $ip -o $host.nmap 
+		
+INITIAL ACCESS
+	SSH
+	
+	FTP
+		Anonymous logon
+			anonymous / [no password]
+		Commands don't work?
+			Sudo before ftp
+			> pass
+		
+	
+	HTTP(S)
+	
+	
+
+PRIVESC
+	LINUX
+		LinPEAS: https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
