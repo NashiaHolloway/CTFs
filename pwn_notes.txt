@@ -9,6 +9,18 @@ RECON
 			ffuf -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt -u http://$ip/FUZZ 
 		Gobuster
 			gobuster dir -u $ip -w /usr/share/wordlists/SecLists/Discovery/Web-Content/common.txt 
+			gobuster vhost -u http://nunchucks.htb -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -k
+				vhost: check if subdomain exists
+				-k: skip SSL verification
+		SSTI
+			TEST:
+			{{7*7}}
+			${7*7}
+			<%= 7*7 %>
+			${{7*7}}
+			#{7*7}
+		Burbsuite
+			Repeater
 	
 	HOST
 		First
@@ -32,3 +44,4 @@ INITIAL ACCESS
 PRIVESC
 	LINUX
 		LinPEAS: https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+		
