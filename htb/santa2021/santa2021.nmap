@@ -1,0 +1,53 @@
+# Nmap 7.92 scan initiated Wed Dec  1 08:49:49 2021 as: nmap -sC -sV -o santa2021.nmap -Pn 46.101.51.163
+Nmap scan report for 46.101.51.163
+Host is up (0.099s latency).
+Not shown: 905 filtered tcp ports (no-response), 91 closed tcp ports (reset)
+PORT      STATE SERVICE VERSION
+30000/tcp open  http    Node.js (Express middleware)
+|_http-title: Toy Workshop
+30718/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: HTB Academy
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+30951/tcp open  unknown
+| fingerprint-strings: 
+|   Help: 
+|     y~`&
+|   LDAPBindReq: 
+|     <$jnW
+|   LPDString: 
+|     #X"]
+|   X11Probe: 
+|_    `pZDy
+31337/tcp open  http    Node.js (Express middleware)
+|_http-title: Toy Workshop
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port30951-TCP:V=7.92%I=7%D=12/1%Time=61A77D92%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,20,"\xf6/P\xd3\x8cG\r\x1cN\x88Hw\xea\|\xd9L\xcd\x1e\xff<\xdeO\xc4B\
+SF:xda\xf5\xc0\x1aO\xbb\x9a6")%r(GenericLines,20,"\xf6/P\xd3\x8cG\r\x1cN\x
+SF:88Hw\xea\|\xd9L\xcd\x1e\xff<\xdeO\xc4B\xda\xf5\xc0\x1aO\xbb\x9a6")%r(Ge
+SF:tRequest,20,"\x94\x9d\xffF\x84\xa7\xb9\xe3{Q#\xb3\$\xdc\x96\n\xa8\x1f\x
+SF:e3\x84\xd9u\xcd\xdfL\x8e\xd6u\xe6\xea\]s")%r(HTTPOptions,20,"\xb7\x86\x
+SF:f2\n\x94L\xe9\x0e\x95C\xc3\xba\xa6>%\x9d\x98\xa0\xad\xbc\xb5\xceW\x8e\x
+SF:ce\xed\xbcy0\x9d\xff\xf7")%r(RTSPRequest,20,"\xafy\]\xb4\xb26\xcc>P\xb7
+SF:\xc7\xc5\xce\xb3\x06\xec\x1c\x20\xcd\x1a\xf1F\xb8:e;\x94\xda\xcd\x13\x8
+SF:a\x9e")%r(DNSVersionBindReqTCP,20,"\xe0\.D\x0c\xf2\xa03#\xee\xdfep\x83\
+SF:xbfQ\xe5\n`J\x19\x9dZ\xef\x12\xce\xaa\xdf\xa7\x19\x94\t\x90")%r(DNSStat
+SF:usRequestTCP,20,"\xdaKXS\x18\xea\x0b\0ZX\xc5\xab\x80\xd8\xef\xc8\xc3\x8
+SF:7\t\x85=\xe5\x20\x8bT\xe6w\xfej\x1cr{")%r(Help,20,"\xe9\xa2\x82\x90w\rm
+SF:\xb2\xc9MC\xc4y~\\`&\x05\x01\+\xa1\xa6\$T\xaf\x19\xcdH\xf7~5\x97")%r(X1
+SF:1Probe,20,"\xc4`pZDy\xda\xc4\x1e\xb2\x02\xa8Z\xb6J\x0f@\xb3b6\x99\xf2d\
+SF:xc0\xa7z\xfb\xf5\[\xa1JI")%r(LPDString,20,"\xf0\x9e#X\"\]\xea\xa9\0\xb7
+SF:\x8d\xafS\xcd\xd0!3&\xda\x933\x94C\x82\*\x9c`\xc2\xdc'\xa0\xf2")%r(LDAP
+SF:BindReq,20,"\x84=y\x98\xa5<\$jnW\x91\*\xa4\x91\xfc,\xcc\xd7\x05K-\?\x80
+SF:\x98\x03\x14\xa1_\xd2\+fE")%r(LANDesk-RC,20,"\xaf\x83Y\xbc\xec\x99\xce\
+SF:xaa\xbf\xe8\[K\x84\xde\*#\xe3\x9f\xc7\xccR\xf9\xad\xb8\xf6\x070\x8e\x94
+SF:\x95\x1b\x8b")%r(TerminalServer,20,"&\x8a\x1b;\x06\x9e\xe2\xd5\xfa<Q\xa
+SF:cco\[\xbb\x01\x948\xee\xae\xe1\x1dS\0\xc8\xf6~\xc0de\xc0")%r(NCP,20,"\x
+SF:d1\x15\xc7\x0b\x98I\x1c\rGF\xe9\xa1\xcb\[\x85R\xd0\x1b\xeb>f\xa5\|\xa1\
+SF:xa31\xc8\xd0\x83A\r\x93")%r(JavaRMI,20,"__\)\x1a\x0c\x8f\(\x82\|\xc7\"\
+SF:xff\xd7m\x20aY\x02\xdaN\xf6G\xbc\x94\xbe\xf5\xb8\x04\xe3EvH")%r(afp,20,
+SF:"\xbcU\xf0\0\xe1\xad9\xf4s\xd1\xbe\x7f\xc4\|\x84\0\xa5\xb9<\x05\xcd\x97
+SF:\x96o\xc9\^Z\x12\x83\xcd3x");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Dec  1 08:50:19 2021 -- 1 IP address (1 host up) scanned in 30.39 seconds
