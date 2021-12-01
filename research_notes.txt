@@ -1,0 +1,11 @@
+research notes
+
+SSTI (Server Side Template Injection)
+	https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection#detect
+	https://portswigger.net/web-security/server-side-template-injection
+	
+SSH Ed25519 KEY
+	https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
+	
+SETUID
+	
