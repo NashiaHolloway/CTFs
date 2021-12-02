@@ -39,9 +39,25 @@ INITIAL ACCESS
 	
 	HTTP(S)
 	
+	SMB
+		evil-winrm -i 10.10.11.106 -u tony -p liltony
+	
 	
 
 PRIVESC
 	LINUX
 		LinPEAS: https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+		
+CHALLENGES
+	CRYPTO
+		RSA
+			cocalc.com 
+			from Crypto.Util.number import long_to_bytes
+			e = 65537
+			N = #
+			C = #
+			phi = euler_phi(N)
+			d = inverse_mod(e, phi)
+			M = pow(C,d,N)
+			print(long_to_bytes(M))	
 		
