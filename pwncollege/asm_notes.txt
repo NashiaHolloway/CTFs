@@ -1,0 +1,10 @@
+Embryo Level 1:
+
+	modify or read from registers_use
+	
+	Running the program:
+		enter assembly in bytes (up to 0x1000 bytes). Put in arbitrary values and observed code started at 0x400000, 0x400003, 0x400005; all xor; byte ptr [rax + 0xsomething], bh... byte ptr [rax], dh... byte ptr [rdx], cl... respectively. ERROR: Invalid memory read (UC_ERR_READ_UNMAPPED). "Sorry, no flag :("
+
+	Read:
+		https://www.raywenderlich.com/615-assembly-register-calling-convention-tutorial
+
