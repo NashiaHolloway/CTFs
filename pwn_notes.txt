@@ -12,6 +12,8 @@ RECON
 			gobuster vhost -u http://nunchucks.htb -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -k
 				vhost: check if subdomain exists
 				-k: skip SSL verification
+		Wordpress
+			wpscan --url http://$ip -o wpscan.txt 
 		SSTI
 			TEST:
 			{{7*7}}
@@ -21,6 +23,11 @@ RECON
 			#{7*7}
 		Burbsuite
 			Repeater
+		Usernames and Passwords
+			Hydra
+				hydra -L username.txt -P /usr/share/wordlists/rockyou.txt $ip -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
+			xmlrpc
+				python3 xmlrpcbruteforce.py http://$ip/xmlrpc.php /usr/share/wordlists/rockyou.txt admin
 	
 	HOST
 		First
@@ -39,9 +46,25 @@ INITIAL ACCESS
 	
 	HTTP(S)
 	
+	SMB
+		evil-winrm -i 10.10.11.106 -u tony -p liltony
+	
 	
 
 PRIVESC
 	LINUX
 		LinPEAS: https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+		
+CHALLENGES
+	CRYPTO
+		RSA
+			cocalc.com 
+			from Crypto.Util.number import long_to_bytes
+			e = 65537
+			N = #
+			C = #
+			phi = euler_phi(N)
+			d = inverse_mod(e, phi)
+			M = pow(C,d,N)
+			print(long_to_bytes(M))	
 		

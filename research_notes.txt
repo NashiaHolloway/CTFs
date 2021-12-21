@@ -9,3 +9,10 @@ SSH Ed25519 KEY
 	
 SETUID
 	
+ELF BINARIES
+	https://medium.com/hackernoon/pwning-binaries-with-surgeon-a-primer-for-offensive-security-professionals-e33765ab2444
+	
+SCF FILE ATTACKS (SMB SHARE)
+	https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/
+	SCF = Shell Command Files 
+	Code can be placed in text file then planted into network share
